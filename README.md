@@ -1,4 +1,4 @@
-# P2P file-sharing system (Distributed Systems)
+# P2P file-sharing system (Distributed Systems).
 
 HOW TO RUN THIS PROJECT
 
