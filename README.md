@@ -1,23 +1,17 @@
-# Napster file-sharing system
+# P2P file-sharing system (Distributed Systems)
 
-Brief about this project
-
-Peer-to-Peer(P2P) Technologies are being widely used for sharing the data between the servers and the clients. One of the major technology for file sharing that is implemented nowadays is the Napster-Style Peer-to-Peer File Sharing System. The older versions of the systems used to have a single server which stores the files in its directory that are received from the clients. The major drawback of these systems was that if a new file has been created in one of the peers, it must be transferred to the server before another peer can access it, which delays the process of transfer from one peer to another. This can be conquered using the Napster system which allows the peer to peer file transfer.
-
-
-### System Architecture ( Which this project was developed over)
-* Processor type: Intel &reg; Core&trade; i5-2410 CPU @ 2.30Ghz x 4
-* Memory: 7.7 GiB
+HOW TO RUN THIS PROJECT
 
 ### System Requirements:
-* Python 2.7 environment installed
+* Python 3.8 environment installed
 
 ### Design
-Entire project is designed using Python 2.7 where I used some network programming concepts such as sockets, multi-threading for establishing connections between peers. Major components of this project are:
-* Indexing Server
+Entire project is designed using Python 3.8  where we used some network programming concepts such as sockets, multi-threading for establishing connections between peers. Major components of this project are:
+* Indexing Server (Hash Tables & Distributed Hash Tables)
 * Peer _( Which acts as client and a server )_
 
 #### Indexing server
+The indexing server acts as Hash Tables & Distributed Hash Tables
 Indexing server indexes the content of all peers _(Which have registered with it)_ using dictionary with a _peer id_ attached to each peer. It provides two funcitons which are **register** and **search** .
 
 ### Peer
@@ -142,12 +136,6 @@ For the peer that is running waiting for requests the output is(Which has the ac
 [*] Got a connection from  127.0.0.1 : 51702
 Done sending
 ```
-Hopefully that illustrated how this project runs and overall idea of _Napster File-Sharing System_
+Hopefully that illustrated how this project runs and overall idea of P2P file sharing systems
 
-### Enhancements
-Possible enhancements to this project are:
-* Allow editing files for the registered peer.
-* Ping the requesting peer to calculate latency.
-* Assign the network bandwidth to each peer.
-### Issues
-Please for any code issues feel free to submit an issue to this repository and I will answer shortly
+
